@@ -33,12 +33,22 @@ body {
   color: whitesmoke;
   /* cover the entire page width : font-size: 10vw;*/
   font-size: 10vw;
+  text-align: center;
 }
 
-/* The real deal */
-.cover {
+/* The real deal  starts here*/
+.glassContainer {
   position: absolute;
-  top: 15%;
+  /* center content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.cover {
+  transition: 0.5s all ease;
   height: 70%;
   width: 70%;
   background-color: rgba(255, 255, 255, 0.25);
@@ -48,4 +58,12 @@ body {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
+}
+
+/* responsiveness */
+
+@media (max-width: 700px) {
+  .cover {
+    height: 30%;
+  }
 }
