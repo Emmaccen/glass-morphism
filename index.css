@@ -15,7 +15,7 @@ body {
 }
 .landingContainer::before {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   content: "";
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -59,8 +59,8 @@ body {
   /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   /* For the fog-like glass effect */
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
 }
 
