@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.landingContainer {
+  /* span the entire desktop height : height: 100vh;*/
+  height: 100vh;
+  font-family: helvetica;
+  /* set a gradient background with 3 colours https://coolors.co/ */
+  background: linear-gradient(
+    to right,
+    rgba(32, 191, 85),
+    rgba(32, 164, 243),
+    rgba(11, 79, 108)
+  );
+}
+
+.centered {
+  /* center content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* so it takes up its containers height (landingContainer)*/
+  height: inherit;
+}
+
+.title {
+  color: whitesmoke;
+  /* cover the entire page width : font-size: 10vw;*/
+  font-size: 10vw;
+}
+
+/* The real deal */
+.cover {
+  position: absolute;
+  top: 15%;
+  height: 70%;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.25);
+  /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  /* For the fog-like glass effect */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
